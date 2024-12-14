@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+    color: #f4f4f4;
+    background: #1b263b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    /* background: #000; */
+    width: 800px;
+    height: 600px;
+    padding: 30px;
+}
+
+
+
+.register_box,
+.login_box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: transform .5s, opacity .4s .1s;
+    transform: translateX(0);
+    pointer-events: initial;
+    opacity: 1;
+}
+
+/* .register_box{
+    transform: translateX(15rem);
+    pointer-events: none;
+    opacity: 0;
+} */
+
+
+/* Header group */
+
+.header_group {
+    margin-bottom: 30px;
+    /* text-align: center; */
+    width: 100%
+}
+
+/* .sign_up,
+.sign_in {
+    display: flex;
+    justify-content: start;
+} */
+
+.header {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+
+.header_text {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sign_up-text,
+.sign_in-text {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.sign_up-text button,
+.sign_in-text button {
+    color: #f4f4f4;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s ease;
+} 
+
+.sign_up-text button:hover,
+.sign_in-text button:hover{
+    color: #0e477d;
+}
+
+/* Form */
+
+.login_form,
+.register_form {
+    width: 500px;
+
+}
+
+.login_content,
+.register_content {
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.input_box {
+    width: 100%;
+    position: relative;
+    height: 70px;
+    /* background: #000; */
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.input_field {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background: #415a77;
+    /* border: 2px solid ; */
+    border-radius: 18px;
+    color: #f4f4f4;
+    padding: 0px 50px 0 20px;
+    transition: .4s ease-in-out;
+}
+
+.input_label {
+    position: absolute;
+    line-height: 70px;
+    /* font-size: ; */
+    left: 20px;
+    color: #778da9;
+    transition: .4s ease;
+    z-index: 100;
+}
+
+/* Icon */
+
+.icon {
+    position: absolute;
+    line-height: 70px;
+    right: 25px;
+}
+
+.eye_icon {
+    z-index: 101;
+    cursor: pointer;
+}
+
+/* Input label move upward & transitions */
+
+.input_field:focus {
+    border: 2px solid;
+}
+
+.input_field:focus,
+.input_field:not(:placeholder-shown) {
+    padding-block: 17px 10px;
+}
+
+.input_field:focus~.input_label,
+.input_field:not(:placeholder-shown)~.input_label {
+    font-size: 10px;
+    transform: translate(3px, -18px);
+}
+
+/* Remember & Forgot */
+.remember_forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forgot {
+    color: #f4f4f4;
+    transition: .3s ease;
+}
+
+.forgot:hover{
+    color: #0e477d;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.input_check {
+    margin: 5px;
+}
+
+/* button */
+
+.btn {
+    width: 100%;
+    margin: 30px 0;
+    height: 60px;
+    border-radius: 15px;
+    /* box-shadow: 0px 4px 10px rgba(62, 9, 9, 0.32) ; */
+    background: #003566;
+    color: #f4f4f4;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .4s ease-in-out;
+}
+
+.btn:hover {
+    background: #0e477d;
+}
+
+.remove{
+    transform: translateX(15rem);
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* .active{
+    transform: translateX(0);
+    pointer-events: initial;
+    opacity: 1;
+} */

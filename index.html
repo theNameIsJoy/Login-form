@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Login form</title>
+</head>
+
+<body>
+    <div class="container">
+        <!------------------- Login ------------------>
+        <div class="login_box" id="login">
+            <div class="header_group">
+                <h1 class="header">Welcome!</h1>
+                <div class="sign_up">
+                    <p class="sign_up-text">
+                        Don't have an account?
+                        <button class="link" id="sign_up-link">Sign up</button>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="login_form">
+                <form action="">
+                    <div class="login_content">
+
+                        <div class="input_box">
+                            <input type="email" placeholder=" " class="input_field" />
+                            <label for="" class="input_label">Email</label>
+                            <i class="ri-mail-fill icon"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" placeholder=" " class="input_field" id="loginInputField"/>
+                            <label for="" class="input_label">Password</label>
+                            <i class="ri-eye-off-fill icon eye_icon" id="eyeIconLogin"></i>
+                        </div>
+
+                        <div class="remember_forgot">
+                            <div class="remember">
+                                <input type="checkbox" id="checkbox" class="input_check" />
+                                <label for="checkbox" class="check_label">Remember me</label>
+                            </div>
+
+
+                            <a href="#" class="forgot">Forgot password?</a>
+
+                        </div>
+
+                        <button type="submit" class="btn">Login</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!------------------- Register ------------------>
+
+        <div class="register_box remove" id="register">
+            <div class="header_group">
+                <p class="header_text">START FOR FREE</p>
+                <h1 class="header">Create a new account.</h1>
+                <div class="sign_in">
+                    <p class="sign_in-text">Already a member?
+                        <button class="link" id="sign_in-link">Sign in</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="register_form">
+                <div class="register_content">
+
+                    <form action="">
+                        <div class="input_group">
+                            <div class="input_box">
+                                <input type="text" placeholder=" " class="input_field" />
+                                <label for="" class="input_label">Username</label>
+                                <i class="ri-map-pin-user-fill icon"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="email" placeholder=" " class="input_field" />
+                                <label for="" class="input_label">Email</label>
+                                <i class="ri-mail-fill icon"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="password" placeholder=" " class="input_field" id="RegisterInputField"/>
+                                <label for="" class="input_label">Password</label>
+                                <i class="ri-eye-off-fill icon eye_icon" id="eyeIconRegister"></i>
+                            </div>
+                        </div>
+    
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
